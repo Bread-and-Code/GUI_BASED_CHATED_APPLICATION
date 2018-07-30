@@ -12,8 +12,9 @@ public class Inputstrign {
         int data = inputStream.read();
         
         while (data != -1) {
-            System.out.println(data);
-            data = inputStream.read();        
+            // System.out.print(data); //It is byte data , read in a stack  
+            System.out.print((char)data); //transform the byte in character 
+            data = inputStream.read();    //data returns the byte     
         }
         inputStream.close();
 
